@@ -42,7 +42,7 @@ a[href]:not([href=""]) {
 a:visited {
     font-style: italic;
 }
-a:hover {
+a[href]:hover {
     text-decoration: underline;
 }
 a:active {
