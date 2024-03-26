@@ -233,19 +233,6 @@ ul.row {
     background-color: var(--color-primary);
     text-decoration: none;
 }
-.card-testimonial {
-    text-align: center;
-}
-.card-avatar {
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-}
-cite {
-    display: block;
-    padding: 1rem;
-    color: var(--color-primary);
-}
 
 .footer {
     padding: var(--footer-padding);
