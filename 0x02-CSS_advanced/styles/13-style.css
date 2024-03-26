@@ -35,7 +35,7 @@ body {
     min-height: var(--line-height-base);
 
 }
-a[href]:not([href=""]) {
+a:link {
     color: var(--text-color);
     text-decoration: none;
 }

@@ -43,9 +43,9 @@ html {
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 4%;
+    --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: calc(3 * var(--font-size-medium)) 0 0 0;
+    --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
 
 }
@@ -82,7 +82,7 @@ body {
 .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
-a[href]:not([href=""]) {
+a:link{
     color: var(--text-color);
     text-decoration: none;
 }
