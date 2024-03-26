@@ -57,7 +57,14 @@
     --button-font-size: var(--font-size-large);
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
-    --button-hover-background: var(--color-primary)
+    --button-hover-background: var(--color-primary);
+
+    --header-padding: 4rem 0 0;
+    --header-logo-position:  relative;
+    --header-logo-link-display:  inline-block;
+    --header-logo-link-position:  absolute;
+    --header-logo-link-top:  -1rem;
+    --header-logo-link-left:  0;
 }
 
 *,
@@ -82,6 +89,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
+}
+
+.header {
+    padding: var(--header-padding);
+
+}
+.header-logo {
+    position: var(--header-logo-position);
+}
+.header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
 }
 
 a:link {
@@ -203,13 +224,15 @@ a:active {
     margin: var(--section-tagline-margin);
 }
 .section-hero {
-    background-size: 90rem auto;
+    background-size: 90rem auto ;
 }
+
 .section-hero .section-title {
     margin-bottom: 5rem;
 }
+
 .section-hero .section-inner {
-    padding: 10rem, 40rem, 2rem, 0;
+    padding: 10rem 40rem 2rem 0;
 }
 
 ul.row {
