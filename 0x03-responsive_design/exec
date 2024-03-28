@@ -1,0 +1,3 @@
+git add *.css
+git commit -m "responsive designe"
+git push
