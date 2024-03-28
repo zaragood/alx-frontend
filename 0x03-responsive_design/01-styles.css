@@ -280,10 +280,19 @@
     background-color: var(--color-primary);
     width: 100%;
   }
-  
+  .header .nav {
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
   @media only screen and (max-width: 767px) {
     .navbar-menu {
-        display: none;
+      flex: 1;
+      display: none;
+    }
+    :root {
+      --nav-item-margin: 0
     }
   }
   /* Header
@@ -301,7 +310,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+   
   /* Footer
       ============================= */
   
