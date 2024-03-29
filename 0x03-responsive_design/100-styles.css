@@ -252,6 +252,7 @@
     list-style: none;
     text-align: center;
     display: flex;
+
   }
   
   .nav .nav-item {
@@ -344,10 +345,11 @@
   .header .menu-btn {
     display: none;
   }
-  .menu-btn:checked ~ .navbar-menu {
+  .menu-btn:checked + .header-container .navbar-menu {
     display: block;
   }
-  .menu-btn:checked ~ .navbar-menu .nav {
+
+  .menu-btn:checked + .header-container .navbar-menu .nav {
     max-height: 100%;
     overflow: inherit;
   }
@@ -765,6 +767,7 @@
       ============================= */
   
   .post {
+    margin: 0 2rem;
     display: flex;
     align-items: baseline;
   }
@@ -794,6 +797,16 @@
     font-size: var(--font-size-small);
     color: var(--color-grey);
     text-align: center;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .post {
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .post-content {
+        padding-left: 0;
+    }
   }
   
   /* Post Meta
@@ -858,6 +871,13 @@
     font-variant: small-caps;
   }
   
+  @media only screen and (max-width: 767px) {
+    .post-comments {
+        width: 767px;
+        margin: 2rem;
+        padding-left: 0;
+    }
+  }
   /* Basic form
       ============================= */
   
